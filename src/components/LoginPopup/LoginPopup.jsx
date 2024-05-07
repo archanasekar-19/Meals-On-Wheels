@@ -26,13 +26,21 @@ const LoginPopup = ({setShowLogin, setUsername}) => {
     
     const handleSubmit = async (e) => {
         e.preventDefault();
-        
         const userData = await fetchUserData();
         console.log(userData);
+
+        if (userData && userData.users) { // Check if userData exists and if it has the users property
+            const user = userData.users.find(user => {
+                return user.email === email && user.password === password;
+            });
+        console.log(user);
+        
+        // const userData = await fetchUserData();
+        // console.log(userData);
        
-        const user = userData.users.find(user => {
-            return user.email === email && user.password === password;
-        });
+        // const user = userData.users.find(user => {
+        //     return user.email === email && user.password === password;
+        };
         console.log(user);
         if (user) {
             navigate('/');
