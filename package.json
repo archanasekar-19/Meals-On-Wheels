@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "copyfiles src/data.json dist vite build",
+    "build": "copyfiles src/data.json dist && npm run build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "server": "json-server --watch src/orders.json --port 8000"
