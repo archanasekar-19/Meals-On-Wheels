@@ -1,0 +1,201 @@
+.cart {
+    margin: 40px 0px;
+    background-color: #fedfb1;
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.cart-items{
+    background-color: #fe9e0d;
+    padding:10px;
+    border-radius: 10px;
+    font-size:large;
+    font-weight: 100;
+    letter-spacing: 1px;
+    justify-content: center;
+    text-align: center;
+}
+.cart-items-title {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: large;
+    font-weight: 500;
+}
+
+.cart hr {
+    height: 1px;
+    background-color: #000000;
+    border: none;
+}
+.cart-items-item {
+    margin: 10px 0px;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    text-align: center;
+}
+
+.cart-items-item img {
+    width: 50px;
+    margin: auto;
+    border-radius:10px;
+}
+.quantity{
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    padding:10px 10px;
+    margin: auto;
+
+}
+
+.cart-items-item div {
+    max-width: 40px;
+    text-align: center;
+    border: 1px solid #EBEBEB;
+    padding: 8px 8px;
+    font-size: 12px;
+    align-items: center;
+}
+.cart-items-remove-icon{
+    cursor: pointer;
+}
+
+.cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    color: #555555;
+    align-items: left;
+    justify-content: center;
+}
+.ticket {
+    position: relative;
+    box-sizing: border-box;
+    width: 400px; 
+    height: 275px; 
+    margin: 50px auto 0;
+    padding: 10px;
+    border-radius: 10px;
+    background: #FBFBFB;
+    box-shadow: 2px 2px 15px 0px #FF4C24;
+    transform: rotate(0deg); 
+}
+  .ticket__content {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #fedfb1;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* Adjust padding as needed */
+  }
+  
+  .ticket__content p {
+    margin-top: 30px;
+    font-size: large;
+    text-align:center;
+  }
+  
+  .ticket__content .cart-total-details {
+    margin-bottom: 10px;
+  }
+  
+  .ticket__content .cart-total-details p {
+    margin: 0;
+  }
+  
+  .ticket__content button {
+    display: block;
+    width: auto;
+    padding: 10px;
+    background: #fe9e0d;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    padding:10px 10px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Ticket styling */
+  .ticket:before,
+  .ticket:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    height: 6px;
+    width: calc(100% - 10px);
+  }
+  
+  .ticket:before {
+    top: -5px;
+    background: radial-gradient(circle, transparent, transparent 50%, #FBFBFB 50%, #FBFBFB 100%) -7px -8px / 16px 16px repeat-x;
+  }
+  
+  .ticket:after {
+    bottom: -5px;
+    background: radial-gradient(circle, transparent, transparent 50%, #FBFBFB 50%, #FBFBFB 100%) -7px -2px / 16px 16px repeat-x;
+  }
+  
+
+@media(max-width: 750px) {
+    .cart {
+        margin: 20px 0px; /* Adjusted margin */
+        padding: 10px; /* Adjusted padding */
+    }
+
+    .cart-items {
+        font-size: medium; /* Adjusted font size */
+    }
+
+    .cart-items-title {
+        grid-template-columns: 1fr 3fr 1fr; /* Adjusted grid layout */
+        font-size: medium; /* Adjusted font size */
+    }
+
+    .cart-items-item {
+        font-size: medium; /* Adjusted font size */
+    }
+
+    .cart-items-item img {
+        width: 40px; /* Adjusted image width */
+    }
+
+    .quantity {
+        width: 30px; /* Adjusted width */
+        height: 30px; /* Adjusted height */
+        padding: 5px 5px; /* Adjusted padding */
+    }
+
+    .cart-items-item div {
+        max-width: 30px; /* Adjusted max width */
+        padding: 4px 4px; /* Adjusted padding */
+        font-size: 10px; /* Adjusted font size */
+    }
+
+    .cart-bottom {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center-align items */
+    }
+
+    .cart-total button {
+        width: 100%; /* Full width button */
+    }
+
+    .cart-promocode-input button {
+        width: 100%; /* Full width button */
+    }
+}

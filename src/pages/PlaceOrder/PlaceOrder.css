@@ -1,0 +1,100 @@
+.place-order{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px 0px;
+}
+.place-order-left{
+    width: 100%;
+    max-width: max(30%,500px);
+}
+.place-order-left .title{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.place-order-left input{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #C5C5C5;
+    border-radius: 4px;
+    outline-color: tomato;
+}
+.place-order-left .multi-field{
+    display: flex;
+    gap: 10px;
+}
+.place-order-right{
+    width: 100%;
+    max-width: max(40%,500px);
+}
+.payment-options{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.payment-option{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border: 1px solid tomato;
+    padding: 12px 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.payment-options button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 10px;
+    background: #fe9e0d;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    color: white;
+    cursor: pointer;
+}
+.payment-options button:hover{
+    background-color: black;
+}
+  .cart-total {
+    width: 150px;
+    margin-left: 150px;
+    padding:10px 10px;
+    background-color: #fe9e0d;
+    color:#ffffff;
+    font-size: large;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .cart-total:hover{
+    box-shadow: 2px 2px 15px 0px #FF4C24;
+  }
+  @media (max-width: 700px) {
+    .place-order {
+        flex-direction: column;
+    }
+    
+    .place-order-right {
+        width: 100%; /* Adjust the width to occupy the full width */
+        max-width: none; /* Remove the max-width */
+    }
+
+    .payment-options {
+        align-items: center; /* Align payment options to the center */
+    }
+
+    .payment-options button {
+        margin-top: 20px; /* Add margin to the button */
+    }
+}

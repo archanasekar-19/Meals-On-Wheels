@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    font-family: "Reem Kufi", sans-serif !important;
+  }
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #f6f6f6;
+  }
+  

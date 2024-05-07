@@ -1,0 +1,49 @@
+{
+    "users": [
+      {
+        "userId": "1",
+        "username": "archana1",
+        "email": "archana1@gmail.com",
+        "password": "archana1",
+        "role": "user",
+        "id": "0804"
+      },
+      {
+        "userId": "2",
+        "username": "archana2",
+        "email": "archana2@gmail.com",
+        "password": "archana2",
+        "role": "user",
+        "id": "6322"
+      },
+      {
+        "userId": "3",
+        "username": "admin1",
+        "email": "admin1@gmail.com",
+        "password": "admin",
+        "role": "admin",
+        "id": "3348"
+      },
+      {
+        "userId": "4",
+        "username": "archanasekar",
+        "email": "archanakmhss@gmail.com",
+        "password": "Archana@19",
+        "role": "user",
+        "id": "6322"
+      },
+      {
+        "id": "1f28",
+        "username": "test1",
+        "email": "test1@gmail.com",
+        "password": "test1"
+      },
+      {
+        "id": "40b2",
+        "userId": "c53sax749",
+        "username": "test2@gmail.com",
+        "email": "test2@gmail.com",
+        "password": "test"
+      }
+    ]
+}

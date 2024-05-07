@@ -1,0 +1,118 @@
+.footer-wrapper {
+    padding: 20px 20px;
+    display: flex;
+    margin-top: 10rem;
+    flex-direction: row;
+    align-items:center;
+    background-color: rgb(0, 0, 0);
+    color:#e77f2a;
+  }
+  .footer-logo-container {
+    width: 500px;
+    height: auto;
+    margin-right: 2rem;
+  }
+  .footer-icons {
+    margin-top: 1rem;
+  }
+  .footer-icons svg {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    color: #585858;
+  }
+  .footer-section-one {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+  }
+  .footer-section-two {
+    padding:2px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .footer-section-columns {
+    margin: 1rem 0rem;
+    display: flex;
+    padding:50px 50px;
+    flex-direction: column;
+    color:#ffffff;
+    min-width: auto; 
+  }
+  .footer-section-columns span {
+    
+    font-weight: 300;
+    color:#ffffff;
+    cursor: pointer;
+  }
+  .footer-icon-text {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-icon-text svg {
+    margin-right: 5px;
+  }
+  
+  .desc {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    text-align: center; 
+}
+
+@media screen and (max-width: 768px) {
+  .footer-wrapper {
+      margin-top: 5rem;
+  }
+
+  .footer-logo-container {
+      width: 300px;
+  }
+
+  .footer-icons svg {
+      font-size: 1rem;
+      margin-left: 1rem;
+  }
+
+  .footer-section-columns {
+      padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-wrapper {
+      margin-top: 3rem;
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .footer-logo-container {
+      width: 250px;
+      margin-right: 0;
+      margin-bottom: 1rem;
+  }
+
+  .footer-section-one,
+  .footer-section-two {
+      width: 100%;
+      padding: 10px;
+  }
+  .footer-section-two {
+    align-items: flex-start;
+}
+
+
+  .footer-icons {
+      margin-top: 0.5rem;
+  }
+
+  .footer-icons svg {
+      font-size: 0.8rem;
+      margin-left: 1rem;
+  }
+
+  .footer-section-columns {
+      padding: 10px;
+  }
+}

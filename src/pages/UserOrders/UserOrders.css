@@ -1,0 +1,46 @@
+.orders-container {
+    margin: 30px;
+}
+
+.orders-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.order-cards {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.order-card {
+    border: 1px solid #ccc;
+    background-color: orange;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.order-card:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 15px 0px #FF4C24;
+}
+
+.delivery-info {
+    padding-left: 20px;
+}
+
+.cart-items {
+    padding-left: 20px;
+    font-size: 16px;
+    color:#ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}

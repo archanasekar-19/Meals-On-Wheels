@@ -1,0 +1,127 @@
+{
+  "users": [
+    {
+      "userId": "1",
+      "username": "archana1",
+      "email": "archana1@gmail.com",
+      "password": "archana1",
+      "role": "user",
+      "id": "0804"
+    },
+    {
+      "userId": "2",
+      "username": "archana2",
+      "email": "archana2@gmail.com",
+      "password": "archana2",
+      "role": "user",
+      "id": "6322"
+    },
+    {
+      "userId": "3",
+      "username": "admin1",
+      "email": "admin1@gmail.com",
+      "password": "admin",
+      "role": "admin",
+      "id": "3348"
+    },
+    {
+      "userId": "4",
+      "username": "archanasekar",
+      "email": "archanakmhss@gmail.com",
+      "password": "Archana@19",
+      "role": "user",
+      "id": "6322"
+    },
+    {
+      "id": "1f28",
+      "username": "test1",
+      "email": "test1@gmail.com",
+      "password": "test1"
+    },
+    {
+      "id": "40b2",
+      "userId": "c53sax749",
+      "username": "test2@gmail.com",
+      "email": "test2@gmail.com",
+      "password": "test"
+    }
+  ],
+  "orders": [
+    {
+      "orderId": "1",
+      "date": "2024-05-03",
+      "deliveryInformation": {
+        "firstName": "Archana",
+        "lastName": "Sekar",
+        "email": "archana1@gmail.com",
+        "street": "Rainbow Street",
+        "city": "Tiruppur",
+        "state": "Tamilnadu",
+        "zipcode": "638752",
+        "country": "India",
+        "phone": "9384257033"
+      },
+      "items": [
+        {
+          "name": "Pizza",
+          "price": 10.99,
+          "image": "pizza.jpg",
+          "quantity": 2
+        },
+        {
+          "name": "Burger",
+          "price": 5.99,
+          "image": "burger.jpg",
+          "quantity": 1
+        }
+      ],
+      "total": 27.97,
+      "id": "f8c1"
+    },
+    {
+      "orderId": "2",
+      "date": "2024-05-03",
+      "deliveryInformation": {
+        "firstName": "Taylor",
+        "lastName": "Swift",
+        "email": "taylor@gmail.com",
+        "street": "Rainbow Street",
+        "city": "Tiruppur",
+        "state": "Tamilnadu",
+        "zipcode": "638752",
+        "country": "India",
+        "phone": "9384257033"
+      },
+      "items": [
+        {
+          "name": "Pizza",
+          "price": 10.99,
+          "image": "pizza.jpg",
+          "quantity": 55
+        }
+      ],
+      "total": 50,
+      "id": "9d5b"
+    }
+  ],
+  "foodItems": [
+    {
+      "food_id": 1,
+      "food_name": "Mutton Biryani",
+      "food_image": "biryani1.jpg",
+      "food_price": 12,
+      "food_desc": "Food provides essential nutrients for overall health and well-being",
+      "food_category": "Biryani",
+      "id": "83a4"
+    },
+    {
+      "food_id": 2,
+      "food_name": "Chicken Biryani",
+      "food_image": "biryani2.jpg",
+      "food_price": 18,
+      "food_desc": "Food provides essential nutrients for overall health and well-being",
+      "food_category": "Biryani",
+      "id": "3564"
+    }
+  ]
+}
