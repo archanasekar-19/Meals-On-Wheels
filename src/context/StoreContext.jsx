@@ -21,7 +21,7 @@ const StoreContextProvider = (props) => {
     useEffect(() => {
         setUsername(loggedInUser.username);
     }, [loggedInUser.username]); 
-    console.log('loggedin username', username);
+    // console.log('loggedin username', username);
 
 
     useEffect(() => {
