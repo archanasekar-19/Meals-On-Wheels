@@ -19,20 +19,23 @@ const StoreContextProvider = (props) => {
     const [username, setUsername] = useState('');
 
     useEffect(() => {
-        setUsername(loggedInUser.username);
-    }, [loggedInUser.username]); 
- 
-
-
+        if (loggedInUser && loggedInUser.username) {
+            setUsername(loggedInUser.username);
+        }
+    }, [loggedInUser]);
+    
     useEffect(() => {
-        setisUser(loggedInUser.role === 'user');
+        if (loggedInUser && loggedInUser.role) {
+            setisUser(loggedInUser.role === 'user');
+        }
     }, [loggedInUser.role]);
     
     useEffect(() => {
-        setIsAdmin(loggedInUser.role === 'admin');
-    }, [loggedInUser]);
-
-
+        if (loggedInUser && loggedInUser.role) {
+            setIsAdmin(loggedInUser.role === 'admin');
+        }
+    }, [loggedInUser.role]);
+    
     useEffect(()=>{
         console.log(foodList);
     },[foodList]);
