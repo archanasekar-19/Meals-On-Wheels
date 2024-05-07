@@ -12,44 +12,54 @@ const LoginPopup = ({setShowLogin, setUsername}) => {
     const username='';
 
     const navigate = useNavigate();
-
-    // useEffect(() => {
-    //     const loggedInUser = localStorage.getItem('loggedInUser');
-    //     localStorage.setItem('loggedInUser', JSON.stringify(loggedInUser));
-    //     if (loggedInUser) {
-    //         const user = JSON.parse(loggedInUser);
-
-    //         setUsername(loggedInUser.username);
-    //     }
-    // }, [setUsername]);
-
     
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     const userData = await fetchUserData();
+    //     // console.log(userData);
+       
+    //     // const user = userData.users.find(user => {
+    //     //     return user.email === email && user.password === password;
+    //     // });
+
+    //     if (userData && userData.users) { // Check if userData exists and if it has the users property
+    //         const user = userData.users.find(user => {
+    //             return user.email === email && user.password === password;
+    //         });
+    //     console.log(user);
+    //     if (user) {
+    //         navigate('/');
+    //         localStorage.setItem('loggedInUser', JSON.stringify(user));
+    //         setUsername(user.username);
+    //         setShowLogin(false);
+    //         toast.success('Login Successful')
+    //     } else {
+    //         toast.error('Invalid username or password');
+    //     }
+    // };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
+        
         const userData = await fetchUserData();
         console.log(userData);
-
-        if (userData && userData.users) { // Check if userData exists and if it has the users property
+       
+        if (userData && userData.users) { 
             const user = userData.users.find(user => {
                 return user.email === email && user.password === password;
             });
-        console.log(user);
-        
-        // const userData = await fetchUserData();
-        // console.log(userData);
-       
-        // const user = userData.users.find(user => {
-        //     return user.email === email && user.password === password;
-        };
-        console.log(user);
-        if (user) {
-            navigate('/');
-            localStorage.setItem('loggedInUser', JSON.stringify(user));
-            setUsername(user.username);
-            setShowLogin(false);
-            toast.success('Login Successful')
+            console.log(user);
+            if (user) {
+                navigate('/');
+                localStorage.setItem('loggedInUser', JSON.stringify(user));
+                setUsername(user.username);
+                setShowLogin(false);
+                toast.success('Login Successful')
+            } else {
+                toast.error('Invalid username or password');
+            }
         } else {
-            toast.error('Invalid username or password');
+            console.error('User data is invalid or empty');
         }
     };
 
@@ -116,4 +126,4 @@ const LoginPopup = ({setShowLogin, setUsername}) => {
   )
 }
 
-export default LoginPopup
+export default LoginPopup;
