@@ -28,13 +28,13 @@ const StoreContextProvider = (props) => {
         if (loggedInUser && loggedInUser.role) {
             setisUser(loggedInUser.role === 'user');
         }
-    }, [loggedInUser.role]);
+    }, [loggedInUser]);
     
     useEffect(() => {
         if (loggedInUser && loggedInUser.role) {
             setIsAdmin(loggedInUser.role === 'admin');
         }
-    }, [loggedInUser.role]);
+    }, [loggedInUser]);
     
     useEffect(()=>{
         console.log(foodList);
