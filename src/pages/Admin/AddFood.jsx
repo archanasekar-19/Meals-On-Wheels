@@ -181,7 +181,6 @@ import * as Yup from 'yup';
 const AddFood = ({ addFoodSubmit }) => {
   const navigate = useNavigate();
   const { addFoodItem } = useContext(StoreContext);
-
   const validationSchema = Yup.object().shape({
     food_id: Yup.string().required('Food ID is required'),
     food_name: Yup.string().required('Food Name is required'),
