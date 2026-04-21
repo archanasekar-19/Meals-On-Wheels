@@ -1,8 +1,12 @@
-# React + Vite
+# Meals on Wheels
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Meals on Wheels is a modern React + Vite web application that delivers a fast, clean, and intuitive experience for exploring and managing meal options online.
 
-Currently, two official plugins are available:
+## Live Demo  
+https://mow-mealsonwheels.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Why this project stands out  
+A lightweight, high-performance frontend built with a clean component architecture and smooth user experience at its core.
+
+## Tech Stack  
+React, Vite, JavaScript, CSS, HTML
